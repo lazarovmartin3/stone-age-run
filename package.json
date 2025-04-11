@@ -1,0 +1,23 @@
+{
+  "name": "stone-age-run",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/matter-js": "^0.19.8",
+    "matter-js": "^0.20.0",
+    "pixi.js": "^8.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.24.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5"
+  }
+}

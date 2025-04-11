@@ -1,0 +1,423 @@
+{
+  "frames": {
+    "stone_platform_3.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 859,
+        "h": 641
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 859,
+        "h": 641
+      },
+      "sourceSize": {
+        "w": 859,
+        "h": 645
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "stone_platform_2.png": {
+      "frame": {
+        "x": 859,
+        "y": 0,
+        "w": 632,
+        "h": 624
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 3,
+        "w": 632,
+        "h": 624
+      },
+      "sourceSize": {
+        "w": 633,
+        "h": 627
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tree_top_0.png": {
+      "frame": {
+        "x": 1491,
+        "y": 0,
+        "w": 252,
+        "h": 494
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 252,
+        "h": 494
+      },
+      "sourceSize": {
+        "w": 253,
+        "h": 498
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mushrum_bottom_0.png": {
+      "frame": {
+        "x": 1985,
+        "y": 0,
+        "w": 50,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 2,
+        "w": 50,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 57,
+        "h": 122
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "stone_platform_0.png": {
+      "frame": {
+        "x": 1491,
+        "y": 252,
+        "w": 484,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 484,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 486,
+        "h": 244
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "stone_platform_1.png": {
+      "frame": {
+        "x": 1491,
+        "y": 494,
+        "w": 358,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 1,
+        "w": 358,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 365,
+        "h": 120
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Small_grass_2.png": {
+      "frame": {
+        "x": 1849,
+        "y": 494,
+        "w": 245,
+        "h": 121
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 245,
+        "h": 121
+      },
+      "sourceSize": {
+        "w": 246,
+        "h": 121
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Stone_0.png": {
+      "frame": {
+        "x": 1491,
+        "y": 612,
+        "w": 314,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 314,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 315,
+        "h": 85
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tree_0.png": {
+      "frame": {
+        "x": 859,
+        "y": 624,
+        "w": 252,
+        "h": 623
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 0,
+        "w": 252,
+        "h": 623
+      },
+      "sourceSize": {
+        "w": 257,
+        "h": 627
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Stone_1.png": {
+      "frame": {
+        "x": 1482,
+        "y": 697,
+        "w": 253,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 253,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 253,
+        "h": 99
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Small_grass_1.png": {
+      "frame": {
+        "x": 1735,
+        "y": 697,
+        "w": 121,
+        "h": 111
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 1,
+        "w": 121,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 113
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Sceleton_1.png": {
+      "frame": {
+        "x": 1482,
+        "y": 796,
+        "w": 252,
+        "h": 243
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 10,
+        "w": 252,
+        "h": 243
+      },
+      "sourceSize": {
+        "w": 254,
+        "h": 258
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Sceleton_0.png": {
+      "frame": {
+        "x": 1734,
+        "y": 818,
+        "w": 248,
+        "h": 246
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 12,
+        "w": 248,
+        "h": 246
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 258
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mushrum_top_0.png": {
+      "frame": {
+        "x": 0,
+        "y": 641,
+        "w": 222,
+        "h": 105
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 222,
+        "h": 105
+      },
+      "sourceSize": {
+        "w": 222,
+        "h": 106
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tree_bottom_0.png": {
+      "frame": {
+        "x": 222,
+        "y": 641,
+        "w": 89,
+        "h": 214
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 89,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 218
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Small_grass_3.png": {
+      "frame": {
+        "x": 436,
+        "y": 641,
+        "w": 111,
+        "h": 101
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 111,
+        "h": 101
+      },
+      "sourceSize": {
+        "w": 111,
+        "h": 105
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Small_grass_0.png": {
+      "frame": {
+        "x": 222,
+        "y": 730,
+        "w": 99,
+        "h": 101
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 4,
+        "w": 99,
+        "h": 101
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 106
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "Level.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2035,
+      "h": 1064
+    },
+    "scale": 1
+  }
+}

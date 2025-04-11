@@ -1,0 +1,111 @@
+{
+  "frames": {
+    "Mountain_1.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 2048,
+        "h": 362
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 2048,
+        "h": 362
+      },
+      "sourceSize": {
+        "w": 2048,
+        "h": 363
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mountain_0.png": {
+      "frame": {
+        "x": 0,
+        "y": 362,
+        "w": 2046,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 2046,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 2046,
+        "h": 411
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Trees_0.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 976,
+        "h": 1024
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 976,
+        "h": 1024
+      },
+      "sourceSize": {
+        "w": 979,
+        "h": 1024
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Cloud.png": {
+      "frame": {
+        "x": 0,
+        "y": 1792,
+        "w": 106,
+        "h": 59
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 106,
+        "h": 59
+      },
+      "sourceSize": {
+        "w": 107,
+        "h": 62
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "Background.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 1898
+    },
+    "scale": 1
+  }
+}
