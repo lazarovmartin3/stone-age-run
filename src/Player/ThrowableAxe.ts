@@ -3,9 +3,9 @@ import Matter from "matter-js";
 import { Game } from "../Game";
 
 export class ThrowableAxe {
-    sprite: Sprite;
-    body: Matter.Body;
-    speed = 40;
+    private sprite: Sprite;
+    private body: Matter.Body;
+    private speed = 40;
 
     constructor(private game: Game, x: number, y: number) {
         this.sprite = Sprite.from('assets/Player/Sprites/WEAPONS/AXE_0000.png');

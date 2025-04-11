@@ -102,7 +102,8 @@ export class Game {
         //this.app.ticker.add(this.update.bind(this));
     }
 
-    showEndScreen(){
+    showEndScreen() {
+        this.paused = true;
         const score = this.hero.score;
         const endScreen = new EndScreen(this, score);
         this.app.stage.addChild(endScreen);
@@ -143,9 +144,9 @@ export class Game {
         await Assets.load(dinoFrames);
         
         await Assets.load(['assets/Player/Sprites/WEAPONS/AXE_0000.png']);
-        
+        await Assets.load(['assets/freedinosprite/fireball.png']);
 
-        this.createParallaxBackground();    
+        this.createParallaxBackground();
 
         this.app.stage.addChild(this.levelContainer);
     }
@@ -208,6 +209,8 @@ export class Game {
 
 
     update(delta: number) {
+        if (this.paused) return;
+
         this.hero?.update();
         this.updateParallaxBackground();
 
@@ -255,6 +258,7 @@ export class Game {
         const food = colliders.find(body => body.gamefood);
         const enemy = colliders.find(body => body.gameEnemy);
         const weaponAxeThrowable = colliders.find(body => body.weaponAxeThrowable);
+        const fireball = colliders.find(body => body.enemyFireball);
 
         if(hero && platform){
             this.hero.stayOnPlatform();
@@ -266,6 +270,21 @@ export class Game {
 
         if(hero && enemy){
             this.hero.die();
+        }
+
+        if (hero && fireball) {
+            this.hero.die();
+            const fireballObject = fireball.enemyFireball;
+            if (fireballObject) {
+                fireballObject.playerIsHit();
+            }
+        }
+
+        if (fireball && platform) {
+            const fireballObject = fireball.enemyFireball;
+            if (fireballObject) {
+                fireballObject.playerIsHit();
+            }
         }
 
         if(weaponAxeThrowable && enemy){

@@ -6,27 +6,27 @@ import { Food } from "../Food";
 import { Config } from "../Config";
 
 export class Hero extends EventEmitter{
-    container: Container = new Container();
-    input: Input;
-
-    idle: AnimatedSprite;
-    run: AnimatedSprite;
-    jump: AnimatedSprite;
-
-    currentAnimation: AnimatedSprite;
-
-    vx = 0;
-    vy = 0;
-    gravity = Config.common.gravity;
-    jumpStrength = -25;
-    grounded = false;
-
-    food_collected: number;
-    score: number;
-
-    body: Matter.Body;
-    origin_x = screen.width / 2;
-    origin_y = 300;
+    private container: Container = new Container();
+    private input: Input;
+     
+    private idle: AnimatedSprite;
+    private run: AnimatedSprite;
+    private jump: AnimatedSprite;
+     
+    private currentAnimation: AnimatedSprite;
+     
+    private vx = 0;
+    private vy = 0;
+    private gravity = Config.common.gravity;
+    private jumpStrength = -25;
+    private grounded = false;
+     
+    private food_collected: number;
+    private score: number;
+     
+    private body: Matter.Body;
+    private origin_x = screen.width / 2;
+    private origin_y = 300;
 
     constructor(input: Input, private game: Game) {
         super();

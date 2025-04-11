@@ -10,7 +10,7 @@ export class EndScreen extends Container {
 
         // Background
         const bg = new Graphics();
-        bg.beginFill(0x000000, 0.7); // Semi-transparent black background
+        bg.beginFill(0x000000, 0.8); // Semi-transparent black background
         bg.drawRect(0, 0, window.innerWidth, window.innerHeight);
         bg.endFill();
         this.addChild(bg);
@@ -24,7 +24,7 @@ export class EndScreen extends Container {
         // Restart Button
         this.restartButton = new Graphics();
         this.restartButton.beginFill(0x00FF00); // Green color
-        this.restartButton.drawRect(0, 0, 200, 50);
+        this.restartButton.drawRect(0, 0, 250, 50);
         this.restartButton.endFill();
         this.restartButton.x = window.innerWidth / 2 - 100;
         this.restartButton.y = window.innerHeight / 2 + 20;

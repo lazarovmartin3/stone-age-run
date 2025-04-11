@@ -2,7 +2,7 @@ import { AnimatedSprite, Texture, Container, EventEmitter, Ticker } from 'pixi.j
 import * as Matter from "matter-js";
 import { Game } from "./Game";
 import { Config } from "./Config";
-import { Platform } from "./Platform";
+import { Fireball } from "./Fireball";
 
 enum EnemyState{
     Idle, Walk, Jump
@@ -10,24 +10,26 @@ enum EnemyState{
 
 export class Enemy {
 
-    container: Container = new Container();
-    idle: AnimatedSprite;
-    run: AnimatedSprite;
-    jump: AnimatedSprite;
+   private container: Container = new Container();
+   private idle: AnimatedSprite;
+   private run: AnimatedSprite;
+   private jump: AnimatedSprite;
 
-    state: EnemyState = EnemyState.Idle;
-    stateTimer = 0;
+   private state: EnemyState = EnemyState.Idle;
+   private stateTimer = 0;
+   private attackTimer = 0;
+ 
+   private currentAnimation: AnimatedSprite;
 
-    currentAnimation: AnimatedSprite;
-
-    gravity = Config.common.gravity;
-    jumpStrength = -25;
-    grounded = false;
-
-    body: Matter.Body;
-    isJumping = false;
-    isWalking = false;
-    origin_y: number;
+   private gravity = Config.common.gravity;
+   private jumpStrength = -25;
+   private grounded = false;
+ 
+   private body: Matter.Body;
+   private isJumping = false;
+   private isWalking = false;
+   private origin_y: number;
+   private fireballs: Fireball[] = [];
 
     constructor(private game: Game, x: number, y: number){
 
@@ -134,6 +136,11 @@ export class Enemy {
         }
 
         this.updateStates(delta);
+        this.createFireball(delta);
+        this.fireballs.forEach((fireball) => {
+            if (fireball) fireball.update();
+        });
+        this.clearFirballs();
     }
 
     updateStates(delta: Ticker){
@@ -194,6 +201,31 @@ export class Enemy {
     stopWalking() {
         this.isWalking = false;
         this.showAnimation(this.idle); 
+    }
+
+    createFireball(detla: Ticker) {
+        this.attackTimer += detla.deltaTime;
+        if (this.attackTimer > 200) {
+            const fireball = new Fireball(this.game, this.container.x, this.container.y, this);
+            this.fireballs.push(fireball);
+            this.attackTimer = 0;
+        }
+    }
+
+    clearFireball(fireball: Fireball) {
+        fireball.destroy();
+        const index = this.fireballs.indexOf(fireball);
+        if (index !== -1) {
+            this.fireballs.splice(index, 1);
+        }
+    }
+
+    clearFirballs() {
+        this.fireballs = this.fireballs.filter((fireball) => {
+            const stillVisible = fireball.sprite.x > -100;
+            if (!stillVisible) fireball.destroy();
+            return stillVisible;
+        });
     }
 
     // To detect platform collision, ensure the enemy is grounded and on the platform

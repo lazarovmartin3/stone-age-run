@@ -1,4 +1,4 @@
-import { Container, Text, Graphics } from 'pixi.js';
+﻿import { Container, Text, Graphics } from 'pixi.js';
 
 export class StartScreen extends Container {
     constructor(startGameCallback: () => void) {
@@ -10,6 +10,25 @@ export class StartScreen extends Container {
         bg.drawRect(0, 0, window.innerWidth, window.innerHeight);
         bg.endFill();
         this.addChild(bg);
+
+        const instructions = new Text(
+            `Help the caveman find food—but watch out for dinosaurs!\n\n` +
+            `Controls:\n` +
+            `W - Jump\nA / D - Move left and right\nLeft Mouse Button - Throw axe\n\n` +
+            `Rules:\n` +
+            `🍖 Eating meat gives strength.\n🔥 Getting hit by fireballs or enemies reduces food.\n☠️ Falling off the platform results in instant death.`,
+            {
+                fontFamily: 'Arial',
+                fontSize: 20,
+                fill: '#ffffff',
+                wordWrap: true,
+                wordWrapWidth: 500,
+                lineHeight: 28
+            }
+        );
+        instructions.x = 250;
+        instructions.y = window.innerHeight / 2 - 200;
+        this.addChild(instructions);
 
         // Start Game button
         const button = new Graphics();
