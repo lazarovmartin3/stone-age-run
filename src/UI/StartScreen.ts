@@ -1,14 +1,12 @@
-﻿import { Container, Text, Graphics } from 'pixi.js';
+﻿import { Container, Text, Graphics, Sprite } from 'pixi.js';
 
 export class StartScreen extends Container {
     constructor(startGameCallback: () => void) {
         super();
 
-        // Background
-        const bg = new Graphics();
-        bg.beginFill(0x000000, 0.5); // semi-transparent black
-        bg.drawRect(0, 0, window.innerWidth, window.innerHeight);
-        bg.endFill();
+        const bg = Sprite.from('assets/Background/startGameBackground.jpg');//G:\PixiProjects\stone-age-run\public\assets\Background\startGameBackground.jpg
+        bg.width = window.innerWidth;
+        bg.height = window.innerHeight;
         this.addChild(bg);
 
         const instructions = new Text(
@@ -20,14 +18,14 @@ export class StartScreen extends Container {
             {
                 fontFamily: 'Arial',
                 fontSize: 20,
-                fill: '#ffffff',
+                fill: '#000000',
                 wordWrap: true,
                 wordWrapWidth: 500,
                 lineHeight: 28
             }
         );
-        instructions.x = 250;
-        instructions.y = window.innerHeight / 2 - 200;
+        instructions.x = window.innerWidth - 550;
+        instructions.y = window.innerHeight / 2 - 400;
         this.addChild(instructions);
 
         // Start Game button

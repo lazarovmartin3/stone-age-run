@@ -67,7 +67,7 @@ export class Game {
             this.startGame(); // Start the game when the button is clicked
             this.app.stage.removeChild(startScreen); // Remove the start screen after the game starts
         });
-    
+        
         this.app.stage.addChild(startScreen);
     }
 

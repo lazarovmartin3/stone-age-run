@@ -10,6 +10,7 @@ async function loadAssets() {
     }
 
     await Assets.load(idleFrames);
+    await Assets.load('assets/Background/startGameBackground.jpg');
 }
 
 loadAssets().then(() => {
