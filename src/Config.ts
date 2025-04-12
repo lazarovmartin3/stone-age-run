@@ -21,7 +21,7 @@ export const Config = {
         }
     },
     hero: {
-        speed: 10
+        speed: 5
     },
     enemy: {
         chance: 0.9,
